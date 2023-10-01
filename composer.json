@@ -1,0 +1,48 @@
+{
+    "name": "hnllyrp/laravel-adminer",
+    "description": "Laravel Adminer Database Manager ",
+    "keywords": [
+        "php",
+        "laravel",
+        "adminer",
+        "database",
+        "management",
+        "mysql"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hnllyrp",
+            "email": "hnllyrp@126.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "illuminate/contracts": "~5.0|~6.0|~7.0|~8.0|~9.0|~10.0",
+        "illuminate/routing": "~5.0|~6.0|~7.0|~8.0|~9.0|~10.0",
+        "illuminate/support": "~5.0|~6.0|~7.0|~8.0|~9.0|~10.0"
+    },
+    "autoload": {
+        "psr-4": {
+             "Hnllyrp\\Adminer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hnllyrp\\Adminer\\AdminerServiceProvider"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hnllyrp\\Adminer\\\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
